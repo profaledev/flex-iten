@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="item item-grow-blue">Item 1</div>
+      <div class="item item-grow-red">Item 2</div>
+      <div class="item item-grow-green">Item 3</div>
+      <div class="item item-grow-yellow">Item 4</div>
+    </div>
+
+    <!-- 📌 Determina quanto um item pode encolher se não houver espaço suficiente no container.
+
+🔹 Valor padrão: 1 (pode encolher) -->
+    <div class="container">
+      <div class="item item-shrink-blue">Item 1</div>
+      <div class="item item-shrink-red">Item 2</div>
+      <div class="item item-shrink-green">Item 3</div>
+      <div class="item item-shrink-yellow">Item 4</div>
+    </div>
+
+    <!-- 📌 Define o tamanho inicial do item antes da distribuição do espaço extra.
+
+Pode ser auto, px, %, em, etc. -->
+
+    <div class="container">
+      <div class="item item-basis-blue">Item 1</div>
+      <div class="item item-basis-red">Item 2</div>
+      <div class="item item-basis-green">Item 3</div>
+      <div class="item item-basis-yellow">Item 4</div>
+    </div>
+
+    <!-- align-self
+📌 Permite alterar o alinhamento vertical do item dentro do flex container.
+Valores possíveis: -->
+    <div class="container">
+      <div class="item item-align-self-blue">Item 1</div>
+      <div class="item item-align-self-red">Item 2</div>
+      <div class="item item-align-self-green">Item 3</div>
+      <div class="item item-align-self-yellow">Item 4</div>
+      <div class="item item-align-self-orange">Item 5</div>
+      <div class="item item-align-self-pink">Item 6</div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="item item-order-yellow">Item 4</div>
+      <div class="item item-order-red">Item 2</div>
+      <div class="item item-order-blue">Item 1</div>
+      <div class="item item-order-green">Item 3</div>
+
+    </div>
+  </body>
+
+</html>

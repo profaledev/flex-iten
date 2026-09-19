@@ -1,0 +1,172 @@
+/* RESET css */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  padding: 30px;
+  
+}
+.container{
+  display: flex;
+  background-color: #dddd;
+  padding: 15px;
+  margin-top: 20px;
+  gap: 20px;
+  border-radius: 6px;
+}
+.item{
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: 0 1px 15px rgba(0,0,0,0.404);
+}
+.item-grow-blue{
+  background-color: blue;
+  flex-grow: 2;
+ 
+
+}
+.item-grow-green{
+  background-color: green; 
+  flex-grow: 1;
+}
+.item-grow-red{
+  background-color: red;
+  flex-grow: 0;
+}
+.item-grow-yellow{
+  background-color: yellow;
+  flex-grow: 3;
+}
+
+.item-shrink-blue{
+  background-color: blue;
+  width: 200px;
+  flex-shrink: 1;
+  
+}
+.item-shrink-red{
+  background-color: red;
+  width: 200px;
+  flex-shrink: 2;
+}
+.item-shrink-green{
+  background-color: green;
+  width: 200px;
+  flex-shrink: 3;
+}
+.item-shrink-yellow{
+  background-color: yellow;
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.item-basis-blue{
+  background-color: blue;
+  flex-basis: 150px ;
+}
+.item-basis-red{
+  background-color: red;
+  flex-basis: 20%;
+}
+.item-basis-green{
+  background-color: green;
+  flex: auto;
+}
+.item-basis-yellow{
+  background-color: yellow;
+  flex-basis: 15rem;
+}
+
+.container:nth-child(4){
+  height: 500px;
+  align-items: center;
+}
+
+.item-align-self-blue{
+  background-color: blue;
+  align-self: auto;
+}
+.item-align-self-red{
+  background-color: red;
+  align-self: flex-start;
+}
+.item-align-self-green{
+  background-color: green;
+  align-self: flex-end;
+}
+.item-align-self-yellow{
+  background-color: yellow;
+  align-self: center;
+}
+
+.item-align-self-orange{
+  background-color: orange;
+  align-self: baseline;
+}
+.item-align-self-pink{
+  background-color: pink;
+  align-self: stretch;
+
+}
+
+.item-order-blue{
+  background-color: blue;
+  order: 1;
+}
+.item-order-red{
+  background-color: red;
+  order: 2;
+}
+.item-order-green{
+  background-color: green;
+  order: 3;
+ 
+}
+.item-order-yellow{
+  background-color: yellow;
+  order: 4;
+  
+}
+
+
+
+
+.item1 {
+    flex-grow: 2;
+    /* Ocupa mais espaço em comparação aos outros */
+}
+
+/* item2: flex-shrink */
+
+
+.item2 {
+    flex-shrink: 0;
+    /* Não encolhe quando o espaço é reduzido */
+}
+
+/* item3: flex-basis */
+.item3 {
+    flex-basis: 300px;
+    /* Define um tamanho base para o item */
+}
+
+/* item4: align-self */
+.item4 {
+    align-self: flex-end;
+    /* Alinha o item ao final do contêiner */
+}
+
+/* item5: padrão */
+.item5 {
+    flex: 1;
+    /* Comportamento padrão do flex item */
+}
+
+/* Responsividade */

@@ -1,0 +1,95 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://img.freepik.com/vetores-gratis/bolhas-de-bokeh-e-flash-de-sol-sobre-fundo-azul_1182-1745.jpg?t=st=1743129648~exp=1743133248~hmac=0ab3c9280169235c4039dee7c54d861981b9e121359e871ebb1fef6f9e38bac0&w=740');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Contêiner flexível */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    height: 100vh;
+    align-items: center;
+}
+
+/* Cartões */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    /* Todos os cartões começam com flex: 1 */
+    min-width: 200px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagem do cartão */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botão */
+.card button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de transformação ao passar o mouse */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de foco no botão */
+.card button:hover {
+    background-color: #0056b3;
+}
+
+/* Propriedades específicas dos flex-items */
+
+/* item1: flex-grow */
+.item1{
+    flex-grow: 2;
+}
+.item2{
+    flex-shrink: 0;
+}
+.item3{
+    flex-basis: 300px;
+}
+.item4{
+    align-self: flex-end;
+}
